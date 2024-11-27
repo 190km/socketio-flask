@@ -3,6 +3,7 @@ from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['DEBUG'] = False
 socketio = SocketIO(app)
 
 @app.route('/')
